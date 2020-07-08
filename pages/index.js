@@ -15,6 +15,10 @@ export default function Home({ allPostsData }) {
         <p>
           Hello, I’m <strong>Aditya Tibrewal</strong>. I’m a Frontend Developer. You can contact me on{' '}
           <a href="https://twitter.com/aditya_studio">Twitter</a>.
+
+        </p>
+        <p>
+        My goal of starting this site was to document concepts and things I learn in my day to day in my coding career. I will be glad if this could help others too.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
