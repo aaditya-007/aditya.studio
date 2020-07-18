@@ -93,7 +93,7 @@ Below are illustrations showing that.
 
  ![alt text](../images/verify-JWT)
 
- In next part we will see how to generate JST using asymmetric signatures.
+ In next part we will see how to generate JWT using asymmetric signatures.
 
 
 
