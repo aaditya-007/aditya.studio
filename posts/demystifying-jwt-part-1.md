@@ -1,6 +1,6 @@
 ---
 title: "Demystifying JSON Web Tokens - JWT - Part 1"
-date: "2020-07-10"
+date: "2020-07-18"
 ---
 
 In my current company, I was working on implementing a single sign on (SSO) with a third party ticketing system. There were different authentication strategies we could have used but we went with JWT (JSON Web Tokens). JWT is a token-based authentication system which saw rise in its adoption more when people started moving towards **microservices architecture**. In such services we want to authenticate our APIS but we cannot leverage session-based authentication since both services could be on different servers.
