@@ -1,5 +1,5 @@
 ---
-title: "Demystifying JSON Web Tokens - JWT"
+title: "Demystifying JSON Web Tokens - JWT - Part 1"
 date: "2020-07-10"
 ---
 
@@ -61,7 +61,7 @@ $payload_encoded = str_replace('=', '', \strtr(\base64_encode($payload), '+/', '
  
  This function takes header, payload and a secret key and produces a output as shown below.
  
- > Do note that the signatue is also **base64URLencoded**
+ 
 
  ![alt text](../images/signature-creation.png)
 
@@ -77,6 +77,25 @@ $payload_encoded = str_replace('=', '', \strtr(\base64_encode($payload), '+/', '
  //SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 
  ```
+
+ > Do note that the signature is also **base64URLencoded**
+
+
+
+ ![alt text](../images/gen-JWT)
+
+
+
+After JWT is recieved at the other end, it is verifed by using **same secret** key and generating the
+signature and verifying it with recieved signature. If it gets verified the APIs get authenticated.
+
+Below are illustrations showing that.
+
+ ![alt text](../images/verify-JWT)
+
+ In next part we will see how to generate JST using asymmetric signatures.
+
+
 
 
 
